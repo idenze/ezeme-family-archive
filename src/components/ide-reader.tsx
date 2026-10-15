@@ -15,7 +15,7 @@ export function IdeReader({ page }: { page: ArchivePage }) {
     element.querySelectorAll<HTMLElement>('[data-audio]').forEach(audio => {
       const note = document.createElement('p');
       note.className = 'recording-unavailable';
-      note.textContent = `${audio.dataset.label || 'Recording'} · Audio not included in this design preview`;
+      note.textContent = `${audio.dataset['label'] || 'Recording'} · Audio not included in this design preview`;
       audio.replaceWith(note);
     });
     // Preserve the supplied spoken-word filter without executing the archive's scripts.
