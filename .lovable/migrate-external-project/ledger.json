@@ -1,0 +1,15 @@
+{
+  "source": "code-archive",
+  "scope": "Frontend design preview; no production cutover requested",
+  "capabilities": [
+    {"capability":"Pages and written content","source":"196 static HTML pages","outcome":"preserve in redesigned reader","status":"in_progress","next_action":"Import and verify navigation"},
+    {"capability":"Logo and photographs","source":"bundled assets","outcome":"preserve original logo and images","status":"in_progress","next_action":"Transform images locally for design preview"},
+    {"capability":"Dictionary","source":"inline dictionary data","outcome":"preserve browser search","status":"in_progress","next_action":"Verify a real query"},
+    {"capability":"Authentication and register authorization","source":"Nginx HTTP basic auth; configuration not included","outcome":"existing production gates remain unchanged; not reproduced in design preview","status":"pending","next_action":"Configure protected access before any publication or domain cutover"},
+    {"capability":"Audio bytes","source":"2925 recordings omitted from archive","outcome":"preserve recording references","status":"pending","next_action":"Supply recording files before playback verification"},
+    {"capability":"Admin editing and override API","source":"external authenticated /admin/api/content; implementation omitted","outcome":"existing service remains on original website","status":"pending","next_action":"Supply admin implementation for a full migration; design preview uses supplied text"},
+    {"capability":"Database, auth exports, webhooks, payments, schedules","source":"not present; static front end","outcome":"no database migration in design-only scope","status":"not_applicable","next_action":null},
+    {"capability":"Domain cutover","source":"ide.ezeme.org","outcome":"not requested; original site untouched","status":"pending","next_action":"No publication until access controls are verified"},
+    {"capability":"Verification","source":"Lovable preview","outcome":"desktop/mobile and dictionary/navigation checks","status":"in_progress","next_action":"Exercise redesigned pages"}
+  ]
+}
