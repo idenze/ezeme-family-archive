@@ -1,0 +1,15 @@
+{
+  "source": "code-archive",
+  "scope": "Frontend design preview; no production cutover requested",
+  "capabilities": [
+    {"capability":"Pages and written content","source":"196 imported pages; restricted register withheld","outcome":"redesigned reader; internal link audit passed","status":"verified","next_action":null},
+    {"capability":"Logo and photographs","source":"bundled assets","outcome":"original logo preserved; transformed local photographs; missing-image audit passed","status":"verified","next_action":null},
+    {"capability":"Dictionary","source":"7024 inline dictionary entries","outcome":"search for family returned 17 entries through UI","status":"verified","next_action":null},
+    {"capability":"Authentication and register authorization","source":"Nginx HTTP basic auth; configuration not included","outcome":"existing production gates remain unchanged; not reproduced in design preview","status":"pending","next_action":"Configure protected access before any publication or domain cutover"},
+    {"capability":"Audio bytes","source":"2925 recordings omitted from archive","outcome":"preserve recording references","status":"pending","next_action":"Supply recording files before playback verification"},
+    {"capability":"Admin editing and override API","source":"external authenticated /admin/api/content; implementation omitted","outcome":"existing service remains on original website","status":"pending","next_action":"Supply admin implementation for a full migration; design preview uses supplied text"},
+    {"capability":"Database, auth exports, webhooks, payments, schedules","source":"not present; static front end","outcome":"no database migration in design-only scope","status":"not_applicable","next_action":null},
+    {"capability":"Domain cutover","source":"ide.ezeme.org","outcome":"not requested; original site untouched","status":"pending","next_action":"No publication until access controls are verified"},
+    {"capability":"Verification","source":"Lovable preview","outcome":"desktop/mobile navigation, gallery, chapter navigation, archive search, register withholding and dictionary verified; no browser errors; build OK","status":"verified","next_action":null}
+  ]
+}
